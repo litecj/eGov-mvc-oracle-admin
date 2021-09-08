@@ -2,3 +2,56 @@
 1630993365800	Move 'spring' to 'META-INF'
 1630994685283	Move 'servlet-context.xml' to 'spring'
 1630994693617	Delete element
+1631073104099	Rename type 'UserService'
+1631073115036	Rename type 'UserServiceImpl'
+1631073123178	Rename type 'UserController'
+1631073130944	Rename type 'User'
+1631073226502	Rename package 'shop.tripn.oracle.user.cervice'
+1631073235150	Rename package 'shop.tripn.oracle.user.controller'
+1631073244027	Rename package 'shop.tripn.oracle.user.domain'
+1631073259167	Rename type 'Customer'
+1631073332895	Rename package 'shop.tripn.oracle.user.mapper'
+1631073353262	Rename type 'UserMapper'
+1631073463460	Rename package 'shop.tripn.oracle.user.mapper'
+1631073493259	Copy compilation unit
+1631073515054	Rename type 'CustomerDto'
+1631073553838	Copy package
+1631073567308	Rename type 'CustomerController'
+1631073602466	Copy package
+1631073619309	Rename type 'CustomerMapper'
+1631073635587	Copy package
+1631073645894	Rename type 'CustomerService'
+1631073656157	Rename type 'CustomerServiceImpl'
+1631073698425	Copy package
+1631077049029	Copy package
+1631077063066	Copy package
+1631077085430	Copy package
+1631077100767	Copy package
+1631077115408	Copy package
+1631077143703	Rename type 'CustomerController'
+1631077158122	Rename type 'CustomerDto'
+1631077171767	Rename type 'CustomerMapper'
+1631077182311	Rename type 'CustomerService'
+1631077190377	Rename type 'CustomerServiceImpl'
+1631077359485	Copy package
+1631077381101	Rename type 'BookController'
+1631077399539	Copy package
+1631077408953	Copy package
+1631077416451	Copy package
+1631077438737	Rename package 'shop.tripn.oracle.p.service'
+1631077448229	Rename package 'shop.tripn.oracle.p.mapper'
+1631077464764	Rename package 'shop.tripn.oracle.p.domain'
+1631077485341	Rename type 'BookDto'
+1631077495175	Rename type 'BookMapper'
+1631077504751	Rename type 'BookService'
+1631077513497	Rename type 'BookServiceImpl'
+1631077534215	Copy package
+1631078637886	Rename package 'shop.tripn.oracle.publishers.controller'
+1631078646190	Rename type 'PublishersController'
+1631078652837	Rename package 'shop.tripn.oracle.publishers.domain'
+1631078659942	Rename type 'PublishersDto'
+1631078664787	Rename package 'shop.tripn.oracle.publishers.mapper'
+1631078671076	Rename type 'PublishersMapper'
+1631078690408	Rename type 'PublishersService'
+1631078704197	Rename type 'PublishersServiceImpl'
+1631078711954	Rename package 'shop.tripn.oracle.publishers.mapper'

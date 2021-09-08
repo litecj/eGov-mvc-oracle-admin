@@ -8,6 +8,6 @@
 </head>
 <body>
 <h1>Hello Spring MVC</h1>
-<p>자! 이제 시작이야 내 꿈을! 내 꿈을 위한 여행 !</p>
+<p>자! 이제 시작이야 내 꿈을!!</p>
 </body>
 </html>
