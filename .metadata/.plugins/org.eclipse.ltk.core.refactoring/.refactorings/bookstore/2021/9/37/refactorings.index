@@ -55,3 +55,12 @@
 1631078690408	Rename type 'PublishersService'
 1631078704197	Rename type 'PublishersServiceImpl'
 1631078711954	Rename package 'shop.tripn.oracle.publishers.mapper'
+1631156703837	Rename package 'shop.tripn.oracle.book.mapper'
+1631156717901	Move compilation unit
+1631156730717	Move compilation unit
+1631156745816	Move compilation unit
+1631156781020	Delete element
+1631156784537	Delete element
+1631156787817	Delete element
+1631157083456	Rename package 'shop.tripn.oracle.mapper'
+1631158674779	Delete element

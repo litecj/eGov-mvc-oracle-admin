@@ -1,4 +1,4 @@
-package shop.tripn.oracle.publisher.mapper;
+package shop.tripn.oracle.mappers;
 
 import org.springframework.stereotype.Repository;
 
