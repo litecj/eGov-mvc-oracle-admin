@@ -5,5 +5,17 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.mappers.BookMapper"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.book.service.BookService"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.book.domain.BookDto"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.mappers.CustomerMapper"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.customer.service.CustomerService"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.customer.domain.CustomerDto"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.mappers.OrderMapper"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.order.service.OrderService"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.order.domain.OrderDto"/>
 </qualifiedTypeNameHistroy>

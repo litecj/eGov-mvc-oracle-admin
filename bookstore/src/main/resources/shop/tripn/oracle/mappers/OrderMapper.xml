@@ -1,3 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="shop.tripn.oracle.mappers.OrderMapper"></mapper>
+<mapper namespace="shop.tripn.oracle.mappers.OrderMapper">
+	<select id="findAll" resultType="shop.tripn.oracle.order.domain.OrderDto">
+		select 
+			order_id orderId, 
+			cust_id custId,
+			book_id bookId,
+			order_price orderPrice,
+			order_date orderDate
+		 from orders
+	</select>
+	<select id="findById" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="int">
+		select 
+			order_id orderId, 
+			cust_id custId,
+			book_id bookId,
+			order_price orderPrice,
+			order_date orderDate
+		 from orders
+		 where order_id like ${orderId}
+	</select>
+	<select id="findByCustId" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="int">
+		select 
+			order_id orderId, 
+			cust_id custId,
+			book_id bookId,
+			order_price orderPrice,
+			order_date orderDate
+		 from orders
+		 where cust_id like ${custId}
+	</select>
+	<select id="findByBookId" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="int">
+		select 
+			order_id orderId, 
+			cust_id custId,
+			book_id bookId,
+			order_price orderPrice,
+			order_date orderDate
+		 from orders
+		 where book_id like ${bookId}
+	</select>
+	<select id="findByOrderPrice" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="int">
+		select 
+			order_id orderId, 
+			cust_id custId,
+			book_id bookId,
+			order_price orderPrice,
+			order_date orderDate
+		 from orders
+		 where order_price >= ${price}
+	</select>
+	<select id="findByOrderDate" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="string">
+		select 
+			order_id orderId, 
+			cust_id custId,
+			book_id bookId,
+			order_price orderPrice,
+			order_date orderDate
+		 from orders
+		 where order_date like '%'|| #{value} || '%'
+	</select>
+</mapper>
