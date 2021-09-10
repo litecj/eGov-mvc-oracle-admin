@@ -14,8 +14,11 @@
     <fullyQualifiedTypeName name="shop.tripn.oracle.mappers.CustomerMapper"/>
     <fullyQualifiedTypeName name="shop.tripn.oracle.customer.service.CustomerService"/>
     <fullyQualifiedTypeName name="shop.tripn.oracle.customer.domain.CustomerDto"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="shop.tripn.oracle.mappers.OrderMapper"/>
     <fullyQualifiedTypeName name="shop.tripn.oracle.order.service.OrderService"/>
     <fullyQualifiedTypeName name="shop.tripn.oracle.order.domain.OrderDto"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.mappers.PublisherMapper"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.publishers.service.PublisherService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="shop.tripn.oracle.publisher.domain.PublisherDto"/>
 </qualifiedTypeNameHistroy>
