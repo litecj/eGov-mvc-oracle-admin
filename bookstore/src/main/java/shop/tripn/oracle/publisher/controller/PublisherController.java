@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import shop.tripn.oracle.publisher.domain.PublisherDto;
-import shop.tripn.oracle.publishers.service.PublisherService;
+import shop.tripn.oracle.publisher.service.PublisherService;
 
 @Controller
 public class PublisherController {

@@ -1,4 +1,4 @@
-package shop.tripn.oracle.publishers.service;
+package shop.tripn.oracle.publisher.service;
 
 import java.util.List;
 
