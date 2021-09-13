@@ -72,7 +72,7 @@ span.psw {
 
 <h2>Join Form</h2>
 
-<form action="${contextPath}/publicher/add" method="post">
+<form action="${contextPath}/publisher/register" method="post">
 	<div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>

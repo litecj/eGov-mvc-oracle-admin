@@ -37,4 +37,10 @@ public class PublisherServiceImpl implements PublisherService {
 		return publisherMapper.findByPhone(phone);
 	}
 
+	@Override
+	public void add(PublisherDto publisher) {
+		publisherMapper.add(publisher);
+		
+	}
+
 }

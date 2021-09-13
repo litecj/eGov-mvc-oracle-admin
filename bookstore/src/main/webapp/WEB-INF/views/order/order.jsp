@@ -72,7 +72,7 @@ span.psw {
 
 <h2>Join Form</h2>
 
-<form action="${contextPath}/order/oder" method="post">
+<form action="${contextPath}/order/order" method="post">
 	<div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
@@ -90,7 +90,10 @@ span.psw {
     
     <label for="orderPrice"><b>orderPrice</b></label>
     <input type="text" placeholder="Enter orderPrice" name="orderPrice" required>
-        
+    
+    <label for="orderDate"><b>orderDate</b></label>
+    <input type="text" placeholder="Enter orderDate" name="orderDate" required>
+    
     <button type="submit">ORDER</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me

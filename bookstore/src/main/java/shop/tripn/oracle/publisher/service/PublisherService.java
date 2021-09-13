@@ -13,5 +13,6 @@ public interface PublisherService {
 	public List<PublisherDto> findByPubName(String pubName);
 	public List<PublisherDto> findByMgrName(String mgrName);
 	public List<PublisherDto> findByPhone(String phone);
+	public void add(PublisherDto publisher);
 
 }

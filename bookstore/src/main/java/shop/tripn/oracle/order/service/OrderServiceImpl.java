@@ -9,6 +9,7 @@ import shop.tripn.oracle.mappers.OrderMapper;
 import shop.tripn.oracle.order.domain.OrderDto;
 
 @Service
+
 public class OrderServiceImpl implements OrderService{
 
 	@Autowired OrderMapper orderMapper;
@@ -41,7 +42,13 @@ public class OrderServiceImpl implements OrderService{
 	@Override
 	public List<OrderDto> findByOrderDate(String orderDate) {
 		// TODO Auto-generated method stub
-		return null;
+		return orderMapper.findByOrderDate(orderDate);
+	}
+
+	@Override
+	public void order(OrderDto order) {
+		orderMapper.order(order);
+		
 	}
 
 }
