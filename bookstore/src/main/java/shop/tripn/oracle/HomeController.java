@@ -55,4 +55,21 @@ public class HomeController {
 		return "user/Login";
 	}
 	
+	@RequestMapping(value = "/bookform", method = RequestMethod.GET)
+	public String book(Locale locale, Model model) {
+		
+		return "book/book";
+	}
+	
+	@RequestMapping(value = "/orderform", method = RequestMethod.GET)
+	public String order(Locale locale, Model model) {
+		
+		return "order/order";
+	}
+	
+	@RequestMapping(value = "/publisherform", method = RequestMethod.GET)
+	public String publisher(Locale locale, Model model) {
+		
+		return "publisher/publisher";
+	}
 }
