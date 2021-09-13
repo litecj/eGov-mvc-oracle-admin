@@ -37,4 +37,10 @@ public class CustomerServiceImpl implements CustomerService{
 		return customerMapper.findByPhone(phone);
 	}
 
+	@Override
+	public void save(CustomerDto customer) {
+		customerMapper.save(customer);
+		
+	}
+
 }

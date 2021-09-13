@@ -11,4 +11,5 @@ public interface CustomerMapper {
 	public List<CustomerDto> findByName(String custName);
 	public List<CustomerDto> findByAddress(String address);
 	public List<CustomerDto> findByPhone(String phone);
+	public void save(CustomerDto customer);
 }

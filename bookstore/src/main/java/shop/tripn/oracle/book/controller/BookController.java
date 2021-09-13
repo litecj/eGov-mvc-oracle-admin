@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import shop.tripn.oracle.book.domain.BookDto;
 import shop.tripn.oracle.book.service.BookService;
-import shop.tripn.oracle.mappers.BookMapper;
 
 @Controller
 public class BookController {
