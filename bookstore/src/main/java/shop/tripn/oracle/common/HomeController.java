@@ -45,21 +45,36 @@ public class HomeController {
 	
 	@RequestMapping(value = "/joinform", method = RequestMethod.GET)
 	public String join(Locale locale, Model model) {
-		
-		return "user/Join";
-	}
+		return "user/Join";	}
 	
 	@RequestMapping(value = "/loginform", method = RequestMethod.GET)
 	public String login(Locale locale, Model model) {
-		
-		return "user/Login";
-	}
+		return "user/Login";	}
+	@RequestMapping(value = "/userListForm", method = RequestMethod.GET)
+	public String userList() {
+		return "user/List";	}
+	@RequestMapping(value = "/userDeleteForm", method = RequestMethod.GET)
+	public String userDelete() {
+		return "user/Delete";	}
+	@RequestMapping(value = "/userUpdateForm", method = RequestMethod.GET)
+	public String userUpdate() {
+		return "user/Update";	}
 	
-	@RequestMapping(value = "/bookform", method = RequestMethod.GET)
-	public String book(Locale locale, Model model) {
-		
-		return "book/Register";
-	}
+	@RequestMapping(value = "/bookAddForm", method = RequestMethod.GET)
+	public String bookRegister() {
+		return "book/Register";	}
+	
+	@RequestMapping(value = "/bookListForm", method = RequestMethod.GET)
+	public String bookList() {
+		return "book/List";	}
+	
+	@RequestMapping(value = "/bookDeleteForm", method = RequestMethod.GET)
+	public String bookDelete() {
+		return "book/Delete";	}
+	
+	@RequestMapping(value = "/bookUpdateForm", method = RequestMethod.GET)
+	public String bookUpdate() {
+		return "book/Update";	}
 	
 	@RequestMapping(value = "/orderform", method = RequestMethod.GET)
 	public String order(Locale locale, Model model) {

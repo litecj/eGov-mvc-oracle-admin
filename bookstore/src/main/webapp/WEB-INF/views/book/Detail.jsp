@@ -8,22 +8,25 @@
 
 <body>
 
+<h2>Book Detail Form</h2>
 
-<h2>Login Form</h2>
-
-<form action="${contextPath}/customer/login" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+<form action="${contextPath}/book/bookid/" >
 
   <div class="container">
-    <label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter custId" name="custId" required>
+  
+  	<label for="bookId"><b>bookId</b></label>
+    <input type="text" placeholder="Enter ID" name="bookId" required>
+    
+    <!-- <label for="bookTitle"><b>bookTitle</b></label>
+    <input type="text" placeholder="Enter name" name="bookTitle" required>
 
-    <label for="custName"><b>custName</b></label>
-    <input type="text" placeholder="Enter custName" name="custName" required>
+    <label for="price"><b>price</b></label>
+    <input type="text" placeholder="Enter address" name="price" required>
+    
+    <label for="pubId"><b>pubId</b></label>
+    <input type="text" placeholder="Enter phone" name="pubId" required>  -->
         
-    <button type="submit">Login</button>
+    <button type="submit">CHECK</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>

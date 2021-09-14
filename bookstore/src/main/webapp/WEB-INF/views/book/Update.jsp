@@ -9,7 +9,7 @@
 
 <h2>Book Update Form</h2>
 
-<form action="${contextPath}/book/update" method="post">
+<form action="<%= application.getContextPath() %>/book/update" method="post">
 
   <div class="container">
   
@@ -20,10 +20,10 @@
     <input type="text" placeholder="Enter name" name="bookTitle" required>
 
     <label for="price"><b>price</b></label>
-    <input type="text" placeholder="Enter address" name="price" required>
+    <input type="text" placeholder="Enter price1" name="price" required>
     
     <label for="pubId"><b>pubId</b></label>
-    <input type="text" placeholder="Enter phone" name="pubId" required>
+    <input type="text" placeholder="Enter pubId" name="pubId" required>
         
     <button type="submit">UPDATE</button>
     <label>

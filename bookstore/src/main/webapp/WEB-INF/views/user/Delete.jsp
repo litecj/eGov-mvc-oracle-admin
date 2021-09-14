@@ -10,21 +10,22 @@
 
 <h2>User delete Form</h2>
 
-<form action="${contextPath}/customer/delete" method="post">
+<form action="${contextPath}/customer/delete">
 
   <div class="container">
   
   	<label for="custId"><b>custId</b></label>
     <input type="text" placeholder="Enter ID" name="custId" required>
     
-    <label for="custName"><b>custName</b></label>
+    <!--<label for="custName"><b>custName</b></label>
     <input type="text" placeholder="Enter name" name="custName" required>
 
     <label for="address"><b>address</b></label>
     <input type="text" placeholder="Enter address" name="address" required>
     
     <label for="phone"><b>phone</b></label>
-    <input type="text" placeholder="Enter phone" name="phone" required>
+    <input type="text" placeholder="Enter phone" name="phone" required>  -->
+    
         
     <button type="submit">delete</button>
     <label>

@@ -32,7 +32,7 @@ public class BookDto {
 		return price;
 	}
 
-	public void setPrivce(int price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 

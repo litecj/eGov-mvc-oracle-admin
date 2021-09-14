@@ -32,7 +32,7 @@
 			pub_id = ${pubId}
 		where book_id like ${bookId}
 	</update>
-	<delete id="delete" parameterType="Integer">
+	<delete id="delete" parameterType="book">
 		delete from books
 		where book_id like ${bookId}
 	</delete>
