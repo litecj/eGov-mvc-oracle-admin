@@ -33,6 +33,7 @@ public class BookController{
 //		book.setPubId(pubId);
 //		bookService.save(book);
 //		return "Save Success";}
+	
 	@RequestMapping(value="/add", method= RequestMethod.POST)
 	public String save(BookDto t) {
 		bookService.save(t);
