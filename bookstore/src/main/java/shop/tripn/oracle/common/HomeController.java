@@ -1,4 +1,4 @@
-package shop.tripn.oracle;
+package shop.tripn.oracle.common;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -58,18 +58,18 @@ public class HomeController {
 	@RequestMapping(value = "/bookform", method = RequestMethod.GET)
 	public String book(Locale locale, Model model) {
 		
-		return "book/book";
+		return "book/Register";
 	}
 	
 	@RequestMapping(value = "/orderform", method = RequestMethod.GET)
 	public String order(Locale locale, Model model) {
 		
-		return "order/order";
+		return "order/Order";
 	}
 	
 	@RequestMapping(value = "/publisherform", method = RequestMethod.GET)
 	public String publisher(Locale locale, Model model) {
 		
-		return "publisher/publisher";
+		return "publisher/Register";
 	}
 }

@@ -8,9 +8,9 @@
 
 <body>
 
-<h2>Join Form</h2>
+<h2>User Update Form</h2>
 
-<form action="${contextPath}/customer/join" method="post">
+<form action="${contextPath}/customer/update" method="post">
 	<div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
@@ -29,7 +29,7 @@
     <label for="phone"><b>phone</b></label>
     <input type="text" placeholder="Enter phone" name="phone" required>
         
-    <button type="submit">Join</button>
+    <button type="submit">SAVE</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>

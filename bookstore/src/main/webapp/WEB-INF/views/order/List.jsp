@@ -8,9 +8,9 @@
 
 <body>
 
-<h2>Order Order Form</h2>
+<h2>Order List Form</h2>
 
-<form action="${contextPath}/order/order" method="post">
+<form action="${contextPath}/order/list" method="post">
 
   <div class="container">
   
@@ -28,8 +28,8 @@
     
     <label for="orderDate"><b>orderDate</b></label>
     <input type="text" placeholder="Enter orderDate" name="orderDate" required>
-    
-    <button type="submit">ORDER</button>
+        
+    <button type="submit">CHECK</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>

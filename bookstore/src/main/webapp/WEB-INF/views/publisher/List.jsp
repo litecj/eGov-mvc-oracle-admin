@@ -8,28 +8,25 @@
 
 <body>
 
-<h2>Join Form</h2>
+<h2>Publisher List Form</h2>
 
-<form action="${contextPath}/customer/join" method="post">
-	<div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+<form action="${contextPath}/publisher/list" method="post">
 
   <div class="container">
   
-  	<label for="custId"><b>custId</b></label>
-    <input type="text" placeholder="Enter ID" name="custId" required>
+  	<label for="pubId"><b>pubId</b></label>
+    <input type="text" placeholder="Enter ID" name="pubId" required>
     
-    <label for="custName"><b>custName</b></label>
-    <input type="text" placeholder="Enter name" name="custName" required>
+    <label for="pubName"><b>pubName</b></label>
+    <input type="text" placeholder="Enter name" name="pubName" required>
 
-    <label for="address"><b>address</b></label>
-    <input type="text" placeholder="Enter address" name="address" required>
+    <label for="mgrName"><b>mgrName</b></label>
+    <input type="text" placeholder="Enter mgr-Name" name="mgrName" required>
     
     <label for="phone"><b>phone</b></label>
     <input type="text" placeholder="Enter phone" name="phone" required>
         
-    <button type="submit">Join</button>
+    <button type="submit">CHECK</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>

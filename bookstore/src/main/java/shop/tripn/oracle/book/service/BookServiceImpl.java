@@ -17,11 +17,7 @@ public class BookServiceImpl implements BookService {
 		return bookMapper.findAll();
 	}
 	@Override
-	public BookDto findById(int bookId) {
-		return bookMapper.findById(bookId);
-	}
-	@Override
-	public List<BookDto> findByPubId(int pubId) {
+	public List<BookDto> findByPubId(Integer pubId) {
 		return bookMapper.findByPubId(pubId);
 	}
 	@Override
@@ -29,15 +25,33 @@ public class BookServiceImpl implements BookService {
 		return bookMapper.findByBookTitle(bookTitle);
 	}
 	@Override
-	public List<BookDto> findByPrice(int price) {
+	public List<BookDto> findByPrice(Integer price) {
 		return bookMapper.findByPrice(price);
 	}
+		
 	@Override
-	public void add(BookDto book) {
-		bookMapper.add(book);
+	public void save(BookDto t) {
+		bookMapper.save(t);
 		
 	}
+	@Override
+	public BookDto findById(Integer id) {
+		// TODO Auto-generated method stub
+		return bookMapper.findById(id);
+	}
+	@Override
+	public void update(BookDto t) {
+		bookMapper.update(t);
+	}
+	@Override
+	public void delete(Integer id) {
+		bookMapper.delete(id);
+	}
+//	@Override
+//	public BookDto findById(int bookId) {
+//		return bookMapper.findById(bookId);	}
+//	@Override
+//	public void add(BookDto book) {
+//		bookMapper.add(book);}	
 	
-	
-
 }
