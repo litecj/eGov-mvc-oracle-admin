@@ -24,15 +24,19 @@ public class PublisherController {
 		publisherService.save(t);
 		System.out.println(t.toString());
 		return "register success";	}
-	
+	 
 	@RequestMapping("/detail")
-	public void findById(@RequestParam Integer id) {
-		System.out.println(publisherService.findById(id).toString());	}
+	public PublisherDto findById(@RequestParam Integer pubId) {
+		PublisherDto dto = publisherService.findById(pubId);
+		System.out.println(dto.toString());
+		return dto ;}
 	
 	@RequestMapping("/list")
-	public void findAll() {
+	public List<PublisherDto> findAll() {
 		List<PublisherDto> list = publisherService.findAll();
-		for(PublisherDto p : list) {System.out.println(p.toString());}	}
+		for(PublisherDto p : list) {System.out.println(p.toString());}	
+		return list;
+	}
 	
 	@RequestMapping(value="/update", method= {RequestMethod.POST})
 	public String update(PublisherDto t) {
