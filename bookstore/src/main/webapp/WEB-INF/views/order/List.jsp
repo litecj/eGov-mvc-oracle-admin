@@ -14,6 +14,7 @@
 
   <div class="container">
   
+  <!-- 
   	<label for="orderId"><b>orderId</b></label>
     <input type="text" placeholder="Enter ID" name="orderId" required>
     
@@ -28,11 +29,10 @@
     
     <label for="orderDate"><b>orderDate</b></label>
     <input type="text" placeholder="Enter orderDate" name="orderDate" required>
+   -->
         
     <button type="submit">CHECK</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+
   </div>
 
   <div class="container" style="background-color:#f1f1f1">

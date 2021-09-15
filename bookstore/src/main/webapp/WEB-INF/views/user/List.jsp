@@ -14,7 +14,8 @@
 
   <div class="container">
   
-  	<label for="custId"><b>custId</b></label>
+  <!-- 
+   	<label for="custId"><b>custId</b></label>
     <input type="text" placeholder="Enter ID" name="custId" required>
     
     <label for="custName"><b>custName</b></label>
@@ -25,11 +26,11 @@
     
     <label for="phone"><b>phone</b></label>
     <input type="text" placeholder="Enter phone" name="phone" required>
+   -->
+  
         
     <button type="submit">CHECK</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+
   </div>
 
   <div class="container" style="background-color:#f1f1f1">

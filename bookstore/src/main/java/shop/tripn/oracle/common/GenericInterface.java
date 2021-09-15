@@ -11,5 +11,4 @@ public interface GenericInterface<T, U> {
 	void update(T t);
 	void delete(U id);
 	
-
 }
