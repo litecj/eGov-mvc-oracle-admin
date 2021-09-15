@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -7,9 +8,9 @@
 
 <body>
 
-<h2>Order Delete Form</h2>
+<h2>Order Detail Form</h2>
 
-<form action="${contextPath}/order/delete">
+<form action="${contextPath}/order/detail">
 
   <div class="container">
   

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import shop.tripn.oracle.common.GenericInterface;
 import shop.tripn.oracle.customer.domain.CustomerDto;
-import shop.tripn.oracle.customer.service.CustomerService;
+//import shop.tripn.oracle.customer.service.CustomerService;
 
 @Repository
 public interface CustomerMapper extends GenericInterface<CustomerDto, Integer>{

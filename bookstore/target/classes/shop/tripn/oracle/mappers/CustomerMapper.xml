@@ -34,6 +34,7 @@
 			phone = #{phone}
 		where cust_id like ${custId}
 	</update>
+	
 	<delete id="delete" parameterType="customer">
 		delete from customers
 		where cust_id like ${custId}

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -7,9 +8,9 @@
 
 <body>
 
-<h2>Publisher Delete Form</h2>
+<h2>Publisher Detail Form</h2>
 
-<form action="${contextPath}/publisher/delete">
+<form action="${contextPath}/publisher/detail">
 
   <div class="container">
   
@@ -27,7 +28,7 @@
     <input type="text" placeholder="Enter phone" name="phone" required>
      -->
         
-    <button type="submit">Delete</button>
+    <button type="submit">Search</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>

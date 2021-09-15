@@ -53,7 +53,8 @@
 			price,
 			pub_id pubId
 		 from books
-         where book_title like '%'|| #{value} || '%' </select>
+         where book_title like '%'|| #{value} || '%'
+    </select>
     <select id="findByPrice" resultType="book" parameterType="Integer">
 		select 
 			book_id bookId,

@@ -42,9 +42,9 @@ public class CustomerController {
 		return "update Success";	}
 	
 	@RequestMapping("/delete")
-	public void delete(@PathVariable Integer id) {
-		customerService.delete(id);
-		System.out.println(id.toString());}
+	public void delete(Integer custId) {
+		customerService.delete(custId);
+		System.out.println(custId.toString());}
 	
 	@RequestMapping("/custName/{custName}")
 	public void findByName(String custName) {

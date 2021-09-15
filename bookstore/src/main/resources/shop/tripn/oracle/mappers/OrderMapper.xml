@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="shop.tripn.oracle.mappers.OrderMapper">
-	<insert id="order" parameterType="shop.tripn.oracle.order.domain.OrderDto">
+
+	<insert id="save" parameterType="string">
 		insert into
 		orders(order_id, cust_id, book_id, order_price, order_date)
 		values(${orderId}, ${custId}, ${bookId}, ${orderPrice}, #{orderDate})
 	</insert>
-	<select id="findAll" resultType="shop.tripn.oracle.order.domain.OrderDto">
+	
+	<select id="findAll" resultType="order">
 		select 
 			order_id orderId, 
 			cust_id custId,
@@ -15,7 +17,7 @@
 			order_date orderDate
 		 from orders
 	</select>
-	<select id="findById" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="int">
+	<select id="findById" resultType="order" parameterType="int">
 		select 
 			order_id orderId, 
 			cust_id custId,
@@ -25,7 +27,20 @@
 		 from orders
 		 where order_id like ${orderId}
 	</select>
-	<select id="findByCustId" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="int">
+	<update id="update" parameterType="order">
+		update orders set
+			cust_id = ${custId},
+			book_id = ${bookId},
+			order_price = ${orderPrice},
+			order_date = #{orderDate}
+		where order_id like ${orderId}
+	</update>
+	<delete id="delete" parameterType="order">
+		delete from orders
+		where order_id like ${orderId}
+	</delete>
+	
+	<select id="findByCustId" resultType="order" parameterType="int">
 		select 
 			order_id orderId, 
 			cust_id custId,
@@ -35,7 +50,7 @@
 		 from orders
 		 where cust_id like ${custId}
 	</select>
-	<select id="findByBookId" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="int">
+	<select id="findByBookId" resultType="order" parameterType="int">
 		select 
 			order_id orderId, 
 			cust_id custId,
@@ -45,7 +60,7 @@
 		 from orders
 		 where book_id like ${bookId}
 	</select>
-	<select id="findByOrderPrice" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="int">
+	<select id="findByOrderPrice" resultType="order" parameterType="int">
 		select 
 			order_id orderId, 
 			cust_id custId,
@@ -55,7 +70,7 @@
 		 from orders
 		 where order_price >= ${price}
 	</select>
-	<select id="findByOrderDate" resultType="shop.tripn.oracle.order.domain.OrderDto" parameterType="string">
+	<select id="findByOrderDate" resultType="order" parameterType="string">
 		select 
 			order_id orderId, 
 			cust_id custId,

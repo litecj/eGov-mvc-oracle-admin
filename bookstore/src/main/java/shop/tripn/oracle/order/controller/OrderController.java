@@ -9,45 +9,71 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
 import shop.tripn.oracle.order.domain.OrderDto;
 import shop.tripn.oracle.order.service.OrderService;
 
 @Controller
 @RequestMapping("/order")
 public class OrderController {
+	
 	@Autowired OrderService orderService;
 	@Autowired OrderDto order;
 	
-	@RequestMapping(value="/order", method= {RequestMethod.POST})
-	public String add(@RequestParam("orderId") int orderId,
-			@RequestParam("custId") int custId,
-			@RequestParam("bookId") int bookId,
-			@RequestParam("orderPrice") int orderPrice,
-			@RequestParam("orderDate") String orderDate)
-	{System.out.println("orderId: "+orderId);
-		System.out.println("custId: "+custId);
-		System.out.println("bookId: "+bookId);
-		System.out.println("orderPrice: "+orderPrice);
-		System.out.println("orderDate: "+orderDate);
-		order.setOrderId(orderId);
-		order.setCustId(custId);
-		order.setBookId(bookId);
-		order.setOrderPrice(orderPrice);
-		order.setOrderDate(orderDate);
-		orderService.order(order);
-		return "Order success";}
+	@RequestMapping(value="/order", method= RequestMethod.POST)
+	public String save(OrderDto t) {
+		orderService.save(t);
+		System.out.println(t.toString());
+		return "Save Success";	}
+	
+	@RequestMapping("/detail")
+	public void findById(@RequestParam Integer orderId) {
+		System.out.println(orderService.findById(orderId).toString());	}
 	
 	@RequestMapping("/list")
 	public void findAll() {
 		List<OrderDto> list = orderService.findAll();
-		for (OrderDto o : list) {System.out.println(o.toString());}
-	}
-	@RequestMapping("/orderId/{orderId}")
-	public void findById(@PathVariable int orderId) {
-		OrderDto orderDto = orderService.findById(orderId);
-		System.out.println(orderDto.toString());
-	}
+		for(OrderDto o : list) {System.out.println(o.toString());}	}
+	
+	@RequestMapping(value="/update", method= {RequestMethod.POST})
+	public String update(OrderDto t) {
+		orderService.update(t);
+		System.out.println(t.toString());
+		return "update Success";}
+	
+	@RequestMapping("/delete")
+	public void delete(@RequestParam Integer orderId) {
+		orderService.delete(orderId);
+		System.out.println("delete" + orderId);	}
+		
+//	@RequestMapping(value="/order", method= {RequestMethod.POST})
+//	public String add(@RequestParam("orderId") int orderId,
+//			@RequestParam("custId") int custId,
+//			@RequestParam("bookId") int bookId,
+//			@RequestParam("orderPrice") int orderPrice,
+//			@RequestParam("orderDate") String orderDate)
+//	{System.out.println("orderId: "+orderId);
+//		System.out.println("custId: "+custId);
+//		System.out.println("bookId: "+bookId);
+//		System.out.println("orderPrice: "+orderPrice);
+//		System.out.println("orderDate: "+orderDate);
+//		order.setOrderId(orderId);
+//		order.setCustId(custId);
+//		order.setBookId(bookId);
+//		order.setOrderPrice(orderPrice);
+//		order.setOrderDate(orderDate);
+//		orderService.order(order);
+//		return "Order success";}
+//	
+//	@RequestMapping("/list")
+//	public void findAll() {
+//		List<OrderDto> list = orderService.findAll();
+//		for (OrderDto o : list) {System.out.println(o.toString());}
+//	}
+//	@RequestMapping("/orderId/{orderId}")
+//	public void findById(@PathVariable int orderId) {
+//		OrderDto orderDto = orderService.findById(orderId);
+//		System.out.println(orderDto.toString());
+//	}
 	@RequestMapping("/custId/{custId}")
 	public void findByCustId(@PathVariable int custId) {
 		List<OrderDto> orders = orderService.findByCustId(custId);

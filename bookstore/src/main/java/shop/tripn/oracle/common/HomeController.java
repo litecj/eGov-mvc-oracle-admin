@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 public class HomeController {
 	
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+//	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -39,7 +39,6 @@ public class HomeController {
 //		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 //		String formattedDate = dateFormat.format(date);
 //		model.addAttribute("serverTime", formattedDate );
-		
 		return "index";
 	}
 	
@@ -76,15 +75,48 @@ public class HomeController {
 	public String bookUpdate() {
 		return "book/Update";	}
 	
-	@RequestMapping(value = "/orderform", method = RequestMethod.GET)
-	public String order(Locale locale, Model model) {
-		
-		return "order/Order";
-	}
+	@RequestMapping(value = "/orderAddForm", method = RequestMethod.GET)
+	public String orderRegister() {
+		return "order/Order";	}
+	
+	@RequestMapping(value = "/orderListForm", method = RequestMethod.GET)
+	public String orderList() {
+		return "order/List";	}
+	
+	@RequestMapping(value = "/orderDeleteForm", method = RequestMethod.GET)
+	public String orderDelete() {
+		return "order/Delete";	}
+	
+	@RequestMapping(value = "/orderUpdateForm", method = RequestMethod.GET)
+	public String orderUpdate() {
+		return "order/Update";	}
+	
+	@RequestMapping(value = "/orderDetailForm", method = RequestMethod.GET)
+	public String orderDetail() {
+		return "order/Detail";	}
+	
+	@RequestMapping(value = "/publisherAddForm", method = RequestMethod.GET)
+	public String publisherRegister() {
+		return "order/Register";	}
+	
+	@RequestMapping(value = "/publisherListForm", method = RequestMethod.GET)
+	public String publisherList() {
+		return "publisher/List";	}
+	
+	@RequestMapping(value = "/publisherDeleteForm", method = RequestMethod.GET)
+	public String publisherDelete() {
+		return "publisher/Delete";	}
+	
+	@RequestMapping(value = "/publisherUpdateForm", method = RequestMethod.GET)
+	public String publisherUpdate() {
+		return "publisher/Update";	}
+	
+	@RequestMapping(value = "/publisherDetailForm", method = RequestMethod.GET)
+	public String publisherDetail() {
+		return "publisher/Detail";	}
+	
 	
 	@RequestMapping(value = "/publisherform", method = RequestMethod.GET)
 	public String publisher(Locale locale, Model model) {
-		
-		return "publisher/Register";
-	}
+		return "publisher/Register";}
 }
