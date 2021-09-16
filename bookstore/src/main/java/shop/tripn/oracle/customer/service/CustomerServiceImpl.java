@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import shop.tripn.oracle.book.domain.BookDto;
 import shop.tripn.oracle.customer.domain.CustomerDto;
 import shop.tripn.oracle.mappers.CustomerMapper;
 
